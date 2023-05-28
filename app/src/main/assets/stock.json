@@ -1,0 +1,14 @@
+[
+  {"name":"компьютерный блок",
+    "amount": "4",
+    "amountType": "Шт"
+  },
+  {"name":"бумага",
+    "amount": "10",
+    "amountType": "Шт"
+  },
+  {"name":"металл",
+    "amount": "3",
+    "amountType": "Кг"
+  }
+]

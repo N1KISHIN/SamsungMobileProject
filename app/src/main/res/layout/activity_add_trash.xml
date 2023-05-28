@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="105dp"
+        app:layout_constraintBottom_toTopOf="@+id/enterBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TrashAmountEditTextText">
+
+        <LinearLayout
+            android:id="@+id/MainLinenear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/leftLinear"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:text="Шт"
+                    android:visibility="visible" />
+
+                <RadioGroup
+                    android:id="@+id/leftRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/rbPaper"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:text="Бумага" />
+
+                    <RadioButton
+                        android:id="@+id/rbPlastic"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:text="Пластик" />
+
+                    <RadioButton
+                        android:id="@+id/rbGlass"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:text="Стекло" />
+
+                    <RadioButton
+                        android:id="@+id/rbMetal"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:text="Металл" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rightLinear"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:text="Кг" />
+
+                <RadioGroup
+                    android:id="@+id/rightRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rbDanger"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:text="Опасное" />
+
+                    <RadioButton
+                        android:id="@+id/rbTech"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:text="Техника" />
+
+                    <RadioButton
+                        android:id="@+id/rbCloth"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:text="Ткань" />
+
+                    <RadioButton
+                        android:id="@+id/rbBattery"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:text="Батарейки" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/enterBtn"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginEnd="137dp"
+        android:text="Записать"
+        app:layout_constraintBottom_toTopOf="@+id/scanButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/TrashNameEditText"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Введите наименование"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/TVdescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/TrashAmountEditTextText"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="80dp"
+        android:ems="10"
+        android:hint="Объём"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVdescription" />
+
+    <TextView
+        android:id="@+id/TVdescription"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/TrashAmountEditTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TrashNameEditText" />
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="122dp"
+        android:text="Считать QR-код"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
