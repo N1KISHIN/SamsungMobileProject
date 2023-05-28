@@ -49,6 +49,7 @@ class AddTrash : AppCompatActivity() {
         var amountType: String = "Шт"
         val enterBtn = binding.enterBtn
 
+        var wasteType = "Опасное"
 
         val rbMetal = binding.rbMetal
         val rbGlass = binding.rbGlass
@@ -57,18 +58,25 @@ class AddTrash : AppCompatActivity() {
         val rbBattery = binding.rbBattery
         val rbTech = binding.rbTech
         val rbDanger = binding.rbDanger
+        val rbCloth = binding.rbCloth
+
+
+        rbMetal.setOnClickListener { wasteType = "Металл" }
+        rbGlass.setOnClickListener { wasteType = "Стекло" }
+        rbPlastic.setOnClickListener { wasteType = "Пластик" }
+        rbPaper.setOnClickListener { wasteType = "Бумага" }
+        rbBattery.setOnClickListener { wasteType = "Батарейки" }
+        rbTech.setOnClickListener { wasteType = "Техника" }
+        rbDanger.setOnClickListener { wasteType = "Опасное" }
+        rbCloth.setOnClickListener { wasteType = "Ткань" }
 
         dbRef = FirebaseDatabase.getInstance().getReference("Waste")
         dbRefAss = FirebaseDatabase.getInstance().getReference("Associations")
-
-
 
         rb1.setOnClickListener { amountType = "Шт"
             rb2.isChecked = false}
         rb2.setOnClickListener { amountType = "Кг"
             rb1.isChecked = false}
-
-        var wasteType = "Unknown"
 
         val leftRadioGroup: RadioGroup = findViewById(R.id.leftRadioGroup)
         val rightRadioGroup: RadioGroup = findViewById(R.id.rightRadioGroup)
@@ -102,9 +110,8 @@ class AddTrash : AppCompatActivity() {
                 R.id.rbTech -> wasteType = "Техника"
                 R.id.rbDanger -> wasteType = "Опасное"
                 R.id.rbCloth -> wasteType = "Ткань"
-                else -> wasteType = "" // Добавьте соответствующее значение по умолчанию
+                else -> wasteType = "Опасное" // Добавьте соответствующее значение по умолчанию
             }
-            adapter.notifyDataSetChanged()
         }
 
 
