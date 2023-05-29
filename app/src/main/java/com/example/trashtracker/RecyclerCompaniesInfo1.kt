@@ -2,26 +2,25 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.trashtracker.CompanyData
-import com.example.trashtracker.databinding.CompaniesBinding
+import com.example.trashtracker.databinding.ActivityCompaniesBinding
 import com.google.android.gms.location.LocationServices
 import com.google.gson.Gson
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
 
-class Companies : AppCompatActivity() {
-    private lateinit var binding: CompaniesBinding
+class RecyclerCompaniesInfo1 : AppCompatActivity() {
+    private lateinit var binding: ActivityCompaniesBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = CompaniesBinding.inflate(layoutInflater)
+        binding = ActivityCompaniesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val textView: TextView = binding.textView

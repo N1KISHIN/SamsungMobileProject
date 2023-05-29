@@ -1,8 +1,7 @@
 package com.example.trashtracker
 
-import Companies
+import RecyclerCompaniesInfo
 import android.content.Intent
-import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -44,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         val RecyclerCompaniesButton: Button = binding.RecyclerCompButton
         RecyclerCompaniesButton.setOnClickListener {
-            val intent = Intent(this, Companies::class.java)
+            val intent = Intent(this, RecyclerCompaniesInfo::class.java)
             startActivity(intent)
         }
 

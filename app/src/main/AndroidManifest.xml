@@ -28,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".MainActivity"
             android:label="Главное меню"/>
 
@@ -43,7 +44,8 @@
         <activity android:name=".GenerateQrCode"
             android:label="Сгенерировать QR-код"/>
 
-
+<!--        <activity android:name=".Re"-->
+<!--            android:label="Сгенерировать QR-код"/>-->
 
 
 
