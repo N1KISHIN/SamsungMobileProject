@@ -179,21 +179,21 @@ class AddTrash : AppCompatActivity() {
                 val radioGroup: RadioGroup = binding.radioGroup
                 radioGroup.check(R.id.radioButton1)
                 when (wasteType){
-                    "Металл" -> { binding.rbMetal.isChecked = true
+                    "Металл" -> {
                         radioGroup.check(R.id.rbMetal)}
-                    "Стекло" -> {binding.rbGlass.isChecked = true
+                    "Стекло" -> {
                         radioGroup.check(R.id.rbGlass)}
-                    "Пластик" -> {binding.rbPlastic.isChecked = true
+                    "Пластик" -> {
                         radioGroup.check(R.id.rbPlastic)}
-                    "Бумага" -> {binding.rbPaper.isChecked = true
+                    "Бумага" -> {
                         radioGroup.check(R.id.rbPaper)}
-                    "Батарейки" -> {binding.rbBattery.isChecked = true
+                    "Батарейки" -> {
                         radioGroup.check(R.id.rbBattery)}
-                    "Техника" -> {binding.rbTech.isChecked = true
+                    "Техника" -> {
                         radioGroup.check(R.id.rbTech)}
-                    "Опасное" -> {binding.rbDanger.isChecked = true
+                    "Опасное" -> {
                         radioGroup.check(R.id.rbDanger)}
-                    "Ткань" -> {binding.rbCloth.isChecked = true
+                    "Ткань" -> {
                         radioGroup.check(R.id.rbCloth)}
                 }
                 adapter.notifyDataSetChanged()

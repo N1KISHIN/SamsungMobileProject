@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -28,14 +30,21 @@
         </activity>
         <activity android:name=".MainActivity"
             android:label="Главное меню"/>
+
         <activity android:name=".StockActivity"
             android:label="Склад"/>
+
         <activity android:name=".AddTrash"
             android:label="Добавить отходы"/>
+
         <activity android:name=".RecomendationsActivity"
             android:label="Рекомендации"/>
+
         <activity android:name=".GenerateQrCode"
             android:label="Сгенерировать QR-код"/>
+
+
+
 
 
 

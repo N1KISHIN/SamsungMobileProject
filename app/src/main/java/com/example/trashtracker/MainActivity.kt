@@ -1,5 +1,6 @@
 package com.example.trashtracker
 
+import Companies
 import android.content.Intent
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
@@ -38,6 +39,12 @@ class MainActivity : AppCompatActivity() {
         val generateQrCodeButton: Button = binding.QrCodeButton
         generateQrCodeButton.setOnClickListener {
             val intent = Intent(this, GenerateQrCode::class.java)
+            startActivity(intent)
+        }
+
+        val RecyclerCompaniesButton: Button = binding.RecyclerCompButton
+        RecyclerCompaniesButton.setOnClickListener {
+            val intent = Intent(this, Companies::class.java)
             startActivity(intent)
         }
 

@@ -26,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="просмотреть склад"
-        app:layout_constraintBottom_toTopOf="@+id/infoButton"
+        app:layout_constraintBottom_toTopOf="@+id/RecyclerCompButton"
         app:layout_constraintDimensionRatio="10:4"
         app:layout_constraintEnd_toEndOf="@+id/addTrashButton"
         app:layout_constraintHorizontal_bias="0.5"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/infoButton"
+        android:id="@+id/RecyclerCompButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="вызвать службу утилизации"
@@ -54,10 +54,10 @@
         android:text="рекомендации по хранению"
         app:layout_constraintBottom_toTopOf="@+id/QrCodeButton"
         app:layout_constraintDimensionRatio="10:4"
-        app:layout_constraintEnd_toEndOf="@+id/infoButton"
+        app:layout_constraintEnd_toEndOf="@+id/RecyclerCompButton"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/infoButton"
-        app:layout_constraintTop_toBottomOf="@+id/infoButton"
+        app:layout_constraintStart_toStartOf="@+id/RecyclerCompButton"
+        app:layout_constraintTop_toBottomOf="@+id/RecyclerCompButton"
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
@@ -67,9 +67,9 @@
         android:text="Сгенеррровать qr-код"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="10:4"
-        app:layout_constraintEnd_toEndOf="@+id/infoButton"
+        app:layout_constraintEnd_toEndOf="@+id/RecyclerCompButton"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/infoButton"
+        app:layout_constraintStart_toStartOf="@+id/RecyclerCompButton"
         app:layout_constraintTop_toBottomOf="@+id/recButton"
         app:layout_constraintVertical_bias="0.5" />
 
